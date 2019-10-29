@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15400" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15400"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchKitDemo_F19_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="MSG FROM PHONE" id="X97-if-Uu2"/>
+                        <label alignment="left" text="Output goes here" id="jdw-NX-QHL">
+                            <color key="textColor" red="0.26861357689999998" green="1" blue="0.064526446160000001" alpha="1" colorSpace="deviceRGB"/>
+                        </label>
+                        <button width="1" alignment="left" title="SEND" id="ZLy-A0-89u">
+                            <color key="backgroundColor" name="selectedContentBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <connections>
+                                <action selector="sendButtonPressed" destination="AgC-eL-Hgc" id="Fdu-7R-4Nr"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="msgFromPhoneLabel" destination="X97-if-Uu2" id="Jgk-D1-deV"/>
+                        <outlet property="outputLabel" destination="jdw-NX-QHL" id="pUW-Pl-ZIn"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-24" y="194"/>
+        </scene>
+    </scenes>
+</document>
