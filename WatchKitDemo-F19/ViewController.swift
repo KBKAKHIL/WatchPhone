@@ -102,6 +102,7 @@ class ViewController: UIViewController, WCSessionDelegate {
             sendMessageOutputLabel.text = "Cannot reach watch! \(messageCounter)"
             counterLabel.text = "Cannot reach phone\(messageCounter)"
         }
+        //Test
         
         
         // -----------------------------------------------
